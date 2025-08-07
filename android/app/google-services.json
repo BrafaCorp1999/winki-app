@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "934236600317",
+    "project_id": "wink-e51d9",
+    "storage_bucket": "wink-e51d9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:934236600317:android:31da1d5498b3d6d0484b94",
+        "android_client_info": {
+          "package_name": "com.brafacorp.wink"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClEYvPblfo7r_paGgsUdSYU8SPTm1xqoQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

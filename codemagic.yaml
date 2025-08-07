@@ -1,0 +1,23 @@
+workflows:
+  ios-release:
+    name: iOS Release Build
+    max_build_duration: 30
+    environment:
+      flutter: stable
+      xcode: latest
+      cocoapods: default
+    scripts:
+      - name: Install dependencies
+        script: |
+          flutter pub get
+      - name: Build iOS release
+        script: |
+          flutter build ipa --release
+    artifacts:
+      - build/ios/ipa/*.ipa
+      - build/ios/ipa/*.dSYM.zip
+      - flutter_drive.log
+    publishing:
+      email:
+        recipients:
+          - bradeveloper1999@gmail.com  # <- reemplaza con tu correo si quieres que te avise

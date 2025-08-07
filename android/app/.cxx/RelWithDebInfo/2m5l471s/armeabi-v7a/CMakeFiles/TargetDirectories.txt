@@ -1,0 +1,2 @@
+/Users/seven/FlutterApps/wink/android/app/.cxx/RelWithDebInfo/2m5l471s/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/seven/FlutterApps/wink/android/app/.cxx/RelWithDebInfo/2m5l471s/armeabi-v7a/CMakeFiles/rebuild_cache.dir
