@@ -2,8 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class ReplicateService {
-  //static const String _apiToken = 'r8_3jnCQSVYTuY29DrIo7bU8yFnv5wqfrE0JX0aL'; // ⚠️ Reemplaza con tu token
-  static const String _apiToken = String.fromEnvironment('REPLICATE_API');
+
   static const String _apiUrl = 'https://api.replicate.com/v1/predictions';
   static const String _modelVersion = 'db21e45d3f48db8231e4e41b6f12a8c1855b4a6e92bc37e5f86237f233d6060e';
 
@@ -11,7 +10,7 @@ class ReplicateService {
     final response = await http.post(
       Uri.parse(_apiUrl),
       headers: {
-        'Authorization': 'Token $_apiToken',
+        'Authorization': 'Token:',
         'Content-Type': 'application/json',
       },
       body: jsonEncode({
@@ -35,7 +34,7 @@ class ReplicateService {
         final predictionRes = await http.get(
           Uri.parse('$_apiUrl/$predictionId'),
           headers: {
-            'Authorization': 'Token $_apiToken',
+            'Authorization': 'Token:',
             'Content-Type': 'application/json',
           },
         );
